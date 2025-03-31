@@ -3,20 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codex Industries</title>
+    <title>Your Name - Portfolio</title>
     <style>
         body {
-            margin: 20px;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
         }
-        h1 {
-            color: #ff0000;
-            margin-bottom: 20px;
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #333;
+        }
+        .read-more {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>This is a simple website created using HTML.</p>
+    <header>
+        <h1>Your Name</h1>
+        <p>Software Developer & Web Developer</p>
+    </header>
+
+    <div class="container">
+        <nav>
+            <a href="#" class="read-more">Projects</a>
+        </nav>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <h2>Project 1</h2>
+                <p>Description of Project 1 and its features.</p>
+                <a href="project1.html" class="read-more">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h2>Project 2</h2>
+                <p>Description of Project 2 and its features.</p>
+                <a href="project2.html" class="read-more">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h2>Project 3</h2>
+                <p>Description of Project 3 and its features.</p>
+                <a href="project3.html" class="read-more">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Individual project pages (project1.html, project2.html, project3.html) would follow this pattern: -->
+    
+    <!-- Project 1 -->
+    <div class="container">
+        <h2>Project 1</h2>
+        <p>A brief description of what the project does and its key features.
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+        </ul>
+        <img src="project-image.jpg" alt="Project 1">
+    </div>
+
+    <!-- Similar structure for Project 2 and Project 3 -->
 </body>
 </html>
