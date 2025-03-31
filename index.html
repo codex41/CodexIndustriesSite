@@ -72,13 +72,22 @@
         }
         .social-links {
             display: flex;
-            gap: 1.5rem;
+            max-width: 500px;
+            overflow: hidden;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
         }
         .social-link {
             color: white;
             text-decoration: none;
             font-size: 1.5rem;
             transition: background-color 0.3s ease;
+        }
+        .social-links a {
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
         }
         .social-link:hover {
             background-color: #007bff;
@@ -119,12 +128,15 @@
         </div>
     </div>
 
-    <footer id="footer">
-        <a href="https://github.com/codex41" class="social-link"><i class="fab fa-github"></i>GitHub</a>
-        <a href="https://discord.com/users/codex41" class="social-link"><i class="fab fa-discord"></i>Discord</a>
-        <a href="https://www.reddit.com/user/codex_41/" class="social-link"><i class="fab fa-reddit"></i>Reddit</a>
-        <a href="https://bsky.app/profile/codex41.bsky.social" class="social-link"><i class="fab fa-blue"></i>Bluesky</a>
-    </footer>
+<footer class="credit">
+    <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank"><span class="fab fa-github"></span> GitHub</a>
+        <a href="https://discord.gg/yourserverlink" target="_blank"><span class="fab fa-discord"></span> Discord Server</a>
+        <a href="https://www.reddit.com/r/yoursubreddit/" target="_blank"><span class="fab fa-reddit"></span> Reddit Community</a>
+        <a href="https://bluesky.me/@yourusername" target="_blank"><span class="fab fa-bluesky"></span> Bluesky Profile</a>
+    </div>
+    <p>© 2025 Codex Industries. All rights reserved.</p>
+</footer>
 
     <!-- Project 1 Details -->
     <div id="project1" class="project-card">
